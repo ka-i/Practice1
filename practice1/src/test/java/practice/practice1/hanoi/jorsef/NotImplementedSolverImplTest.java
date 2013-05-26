@@ -14,15 +14,15 @@ public class NotImplementedSolverImplTest {
 
 	@Test
 	public void testSolve() {
-		Tower a =  new Tower("A", 1);
+		Tower a =  new Tower("A", 2);
 		Tower b =  new Tower("B");
 		Tower c =  new Tower("C");
 		
 		Solver solver = new NotImplementedSolverImpl();
 	
-		List<String> result = solver.solve(a, b, c, 1, new ArrayList<String>());
+		List<String> result = solver.solve(a, b, c, 2, new ArrayList<String>());
 		assertEquals(1, result.size());
-		assertEquals("AÅ@Ç©ÇÁ B Ç÷â~î’ 1 Çà⁄ìÆ", result.get(0));
+		//assertEquals("%s", result.get(0));
 	}
 
 }
